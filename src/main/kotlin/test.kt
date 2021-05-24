@@ -1,5 +1,5 @@
 
-import java.util.*
+/*import java.util.*
 import kotlin.math.max
 import kotlin.math.min
 
@@ -18,7 +18,7 @@ fun main(args :Array<String>) {
     println(ch)
 
 }
-    /*val set1 = mutableSetOf<Int>()
+    *//*val set1 = mutableSetOf<Int>()
     val set2 = mutableSetOf<Int>()
     (1..n1).forEach { set1.add(input.nextInt()) }
     (1..n2).forEach { set2.add(input.nextInt()) }
@@ -28,3 +28,49 @@ fun main(args :Array<String>) {
         println(min(set1.min()!!, set2.min()!!)*10+ max(set1.min()!!, set2.min()!!))
     }
 }*/
+/*
+
+fun main() {
+    var i: Int = 0
+    var a: Int
+    var b: Int
+    var c: Int
+    var x = 0
+    var q: Int
+    val input = Scanner(System.`in`)
+    a = input.nextInt();
+    b = input.nextInt();
+    c = input.nextInt();
+
+    for(i in 1 .. c){
+            q = i * a
+            x = x + q
+    }
+    var konik = x - b
+    if (konik < 0) {
+        konik = 0
+    }
+    println(konik)
+}*/
+import java.util.*
+fun main(args :Array<String>) {
+    val input = Scanner(System.`in`)
+    var n = input.nextInt()
+    var word = input.next()
+    var a :Int = 0
+    var b :Int = 0
+    for(n in 0 until n){
+        if(word[n].equals('A')){
+            a++
+        }else{
+            b++
+        }
+    }
+    if(a == b) {
+        println("Friendship")
+    }else if(a > b) {
+        println("Anton")
+    }else if(a < b) {
+        println("Danik")
+    }
+}
