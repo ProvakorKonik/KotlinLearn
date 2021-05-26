@@ -55,22 +55,23 @@ fun main() {
 import java.util.*
 fun main(args :Array<String>) {
     val input = Scanner(System.`in`)
-    var n = input.nextInt()
-    var word = input.next()
-    var a :Int = 0
-    var b :Int = 0
-    for(n in 0 until n){
-        if(word[n].equals('A')){
-            a++
-        }else{
-            b++
+    var t  = input.nextInt()
+    while(t > 0){
+        t--
+        var n  = input.nextInt()
+        var myarray :IntArray = IntArray(n )
+        for(i in 0 until n){
+            var value = input.nextInt()
+            myarray.set(i,value)
         }
+        myarray.sort()
+        var lowest_distance = myarray[n-1]
+        for(i in 0 until n-1){
+            if(lowest_distance > myarray[i+1]-myarray[i]){
+                lowest_distance = myarray[i+1]-myarray[i]
+            }
+        }
+        println(lowest_distance)
     }
-    if(a == b) {
-        println("Friendship")
-    }else if(a > b) {
-        println("Anton")
-    }else if(a < b) {
-        println("Danik")
-    }
+
 }

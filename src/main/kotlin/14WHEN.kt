@@ -10,6 +10,9 @@ fun main() {
                                 println("Khokono rath, khokono bikal")
                                 "time 17"
                             }
+                    /*        (time == 19 && time == 20) -> {
+                                "sdf"
+                            }*/
                             else -> "Rather bela"
                         }
     println(welcomeNote)
@@ -19,7 +22,7 @@ fun main() {
         "GOOD" -> "Welcome Bro"
         "Bad"  -> "Dont be sad"
         "Off"  -> "watch some move"
-        "ON"-> "go to study"
+
         "NULL"    -> {  //you can execute more conditions here
             println("make some friend")
             "create beautiful moments"
